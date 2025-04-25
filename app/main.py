@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from langchain_community.document_loaders import WebBaseLoader
 
@@ -8,7 +9,7 @@ from utils import clean_text
 
 def create_streamlit_app(llm, portfolio, clean_text):
     st.title("📧 Cold Mail Generator")
-    url_input = st.text_input("Enter a URL:", value="https://jobs.nike.com/job/R-33460")
+    url_input = st.text_input("Enter a URL:", value="https://careers.nike.com/accounting-administrative-assistant-edinburgh-in/job/R-57501")
     submit_button = st.button("Submit")
 
     if submit_button:
