@@ -12,6 +12,7 @@ def create_streamlit_app(llm, portfolio, clean_text):
     url_input = st.text_input("Enter a URL:", value="https://careers.nike.com/accounting-administrative-assistant-edinburgh-in/job/R-57501")
     submit_button = st.button("Submit")
 
+    #temp rm
     if submit_button:
         try:
             loader = WebBaseLoader([url_input])
